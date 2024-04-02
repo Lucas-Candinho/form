@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Descobrindo Forms</title>
+</head>
+<body>
+    <h1>Explicando Form</h1>
+    <p>Form é um container para elementos de input, usado para coletar inputs de usuário. Normalmente é enviado à um servidor ou outro lugar para ser processado.</p>
+    <p>As tags "input" definem como o usuário vai dar seu input, seja por texto, selecionando caixas, mandando um arquivo, etc</p>
+    <p>As tags "label" servem para acessibilidade, visto que são mais facilmente lidas por leitores de tela e quando clicadas botam a caixa de input em foco</p>
+    <h2>Input Text</h2>
+    <form class="textos">
+        <label for="Primeiramente">Primeiramente:</label>
+        <input type="text" id="Primeiramente" name="Primeiramente" value="Aqui escrevemos um texto">
+        <label for="Segundamente" id="labelSegundamente">Em segundo lugar:</label>
+        <input type="text" id="Segundamente" name="Segundamente" value="Pode ser um nome, sobrenome, etc">
+    </form>
+
+    <h2>Input Radio</h2>
+    <form>
+        <input type="radio" id="primeiro" name="variasOpcoes" value="Primeiro">
+        <label for="primeiro">Você tem Várias opções</label><br>
+        <input type="radio" id="segundo" name="variasOpcoes" value="Segundo">
+        <label for="segundo">Mas só pode</label><br>
+        <input type="radio" id="terceiro" name="variasOpcoes" value="Terceiro">
+        <label for="terceiro">escolher uma</label>
+      </form>
+
+      <h2>Input Checkbox</h2>
+      <form>
+        <input type="checkbox" id="escolha1" name="escolha1" value="1">
+        <label for="vehicle1"> Varias escolhas Novamente</label><br>
+        <input type="checkbox" id="escolha2" name="escolha2" value="2">
+        <label for="vehicle2"> Escolha</label><br>
+        <input type="checkbox" id="escolha3" name="escolha3" value="3">
+        <label for="vehicle3"> Quantas quiser</label>
+      </form> 
+
+      <h2>Input Diversos</h2>
+      <form>
+        <label for="senha"> Senhas:</label>
+        <input type="password" id="senha" name="senha" value="senhas"><br>
+        <label for="data"> Escolha:</label>
+        <input type="date" id="data" name="data" value="data"><br>
+        <label for="arquivo"> Arquivos:</label>
+        <input type="file" id="arquivo" name="arquivo" value="arquivo"><br>
+        <label for="arquivo"> Arquivos:</label>
+        <input type="file" id="arquivo" name="arquivo" value="arquivo"><br>
+        <label for="tempo"> Tempo:</label>
+        <input type="time" id="tempo" name="tempo" value="tempo"><br> 
+        <label for="submit"> Submit (enviar os dados/realizar a action do form):</label>
+        <input type="submit" value="Submit">
+      </form> 
+
+      <h1>Método POST</h1>
+      <p>POST é um método HTML</p>
+      <p>Ele serve para enviar dados por meio de uma requisição HTTP</p>
+      <p id="last">Diferentemente do método GET (que envia no cabeçalho), o POST manda esses dados no corpo da requisição</p>
+
+</body>
+</html>
+
+<!---->
